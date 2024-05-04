@@ -18,7 +18,7 @@ function Hero() {
         </Link>
       </div>
       <div className="animate__animated animate__backInRight xl:w-[40%]  xl:p-4 flex flex-col items-center p-6 xs:p-0 sm:p-10 justify-center">
-      <Image src="/image/hero.png" className="inline" width={500} height={400} />
+      <Image src="/image/hero.png" className="inline" width={500} height={600} />
       </div>
       </div>
       

@@ -7,7 +7,7 @@ function Get3D() {
 
   return (
     <Suspense fallback={<div>Loading...</div>}>
-        <Spline data-aos="zoom-in" className='xs:scale-50 scale-75 lg:scale-90 mx-auto' scene="https://prod.spline.design/SOseIfYSJ8Dq9s2S/scene.splinecode" />
+        <Spline data-aos="zoom-in" className='xs:scale-50  scale-75 lg:scale-90 mx-auto' scene="https://prod.spline.design/SOseIfYSJ8Dq9s2S/scene.splinecode" />
     </Suspense>
   )
 }

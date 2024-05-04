@@ -19,9 +19,12 @@ export default function Home() {
       <SectionFour/>
       <SectionFive/>
       <SectionSex/>
-      <SectionHeight/>
       <SectionSeven/>
-      <Footer/>
+      <SectionHeight/>
+      <Footer/>      
+      
+      
+   
     </main>
   );
 }

@@ -8,16 +8,16 @@ function SectionFive() {
   useEffect(()=>{Aos.init()},[]);
 
   return (
-    <div data-aos-duration="1000" data-aos-delay="500" data-aos="zoom-out" className="w-full flex justify-center py-4 my-48 ">
-      <div className="flex xs2:w-full xs2:px-4 w-[80%] flex-col items-center ">
+    <div data-aos-duration="1000" data-aos-delay="500" data-aos="zoom-out" className="w-screen  overflow-x-hidden flex justify-center py-4 my-48 ">
+      <div className="flex xs2:w-full xs2:px-4 w-[80%]  flex-col items-center ">
         <Title YellowText="de votre enfants " GreenText="L’entretien" />
         <Image
-          className="my-32 "
+          className="my-32 px-10 xs2:scale-75 "
           src="/image/section2.png"
-          width={350}
-          height={350}
+          width={300}
+          height={300}
         />
-        <div className="w-fit gap-14 h-fit xs2:pl-2 pl-8 flex justify-center flex-col ">
+        <div className="w-fit  gap-14 h-fit xs2:pl-2 pl-8 flex justify-center flex-col ">
           <div className="flex gap-5 items-center ">
             <Image
               className=" "
