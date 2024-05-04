@@ -1,10 +1,7 @@
-"use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import 'aos/dist/aos.css';
-import Aos from 'aos'
 function SectionFour() {
-  useEffect(()=>{Aos.init();},[])
   return (
     <div className='lg:px-20 flex flex-col gap-28 my-24'>
         <div className='flex gap-20 lg:gap-0 flex-col lg:flex-row  justify-center items-center  '>

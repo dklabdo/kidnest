@@ -1,15 +1,11 @@
-"use client"
 import React from "react";
 import Title from "../Components/Title";
 import Image from "next/image";
 import Contact from "../Components/Contact";
-import { useEffect } from 'react'
-import Aos from 'aos'
 function SectionHeight() {
-  useEffect(()=>{Aos.init()},[])
 
   return (
-    <div id="#contact" data-aos-duration="500" data-aos-delay="200" data-aos="zoom-out" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
+    <div id="#contact" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
       <Title GreenText="Contact" big={true} YellowText="Us" />
       <div className="flex items-center flex-col lg:flex-row">
         <div className="w-full lg:w-[60%] xs2:px-2 px-6 lg:px-12 ">

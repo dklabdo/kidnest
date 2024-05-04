@@ -1,13 +1,10 @@
-"use client"
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Get3D from "../Components/Get3D";
-import Aos from "aos";
 function SectionOne() {
-  useEffect(()=>{Aos.init()},[]);
 
   return (
-    <div data-aos="zoom-in" className="overflow-x-hidden overflow-y-hidden  h-[500px] lg:flex-row w-full  items-center flex-col  flex  ">
+    <div className="overflow-x-hidden overflow-y-hidden  h-[500px] lg:flex-row w-full  items-center flex-col  flex  ">
       <div className="w-full lg:w-1/2   items-center flex justify-center  h-full">
         <div className="w-fit h-fit">
           <Get3D />

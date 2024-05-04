@@ -1,14 +1,11 @@
-"use client"
 import React from "react";
 import Title from "../Components/Title";
 import Image from "next/image";
-import { useEffect } from 'react'
 import Aos from 'aos'
 function SectionFive() {
-  useEffect(()=>{Aos.init()},[]);
 
   return (
-    <div data-aos-duration="1000" data-aos-delay="500" data-aos="zoom-out" className="w-screen  overflow-x-hidden flex justify-center py-4 my-48 ">
+    <div  className="w-screen  overflow-x-hidden flex justify-center py-4 my-48 ">
       <div className="flex xs2:w-full xs2:px-4 w-[80%]  flex-col items-center ">
         <Title YellowText="de votre enfants " GreenText="L’entretien" />
         <Image
