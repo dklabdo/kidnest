@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Get3D from "../Components/Get3D";
 function SectionOne() {

@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "../Components/Title";
 import Image from "next/image";
-import Aos from 'aos'
 function SectionFive() {
 
   return (

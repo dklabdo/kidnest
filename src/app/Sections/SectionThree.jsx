@@ -1,10 +1,7 @@
-"use client"
-import React,{useEffect} from 'react'
+import React from 'react'
 import Title from '../Components/Title'
 import Image from 'next/image'
-import Aos from 'aos'
 function SectionThree() {
-    useEffect(()=>{Aos.init()},[])
   return (
     <div  id='service' className='w-full my-20 xl:my-40 '>
         <Title GreenText="Q’est ce q’on propose dans" YellowText="notre creche" />
@@ -19,7 +16,7 @@ function SectionThree() {
 
 function Card({icon,title,content} ){
     return(
-        <div data-aos="zoom-in" className='w-full  xl:w-[400px] bg-white shadow-lg px-4 py-20 rounded-3xl flex flex-col gap-6 shadow-gray-400/80'>
+        <div  className='w-full  xl:w-[400px] bg-white shadow-lg px-4 py-20 rounded-3xl flex flex-col gap-6 shadow-gray-400/80'>
             <div className={`flex justify-center mx-auto items-center w-28 h-28 rounded-full ${icon == 2 ? "bg-secondary/70" : "bg-primary/70"}`}>
                 <Image src={`/icon/c${icon}.svg`}  width={70} height={70} />
 

@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import Title from "../Components/Title";
 import Image from "next/image";
