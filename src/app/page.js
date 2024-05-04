@@ -11,7 +11,7 @@ import SectionHeight from "./Sections/SectionHeight";
 import Footer from "./Components/Footer";
 export default function Home() {
   return (
-    <main className="w-full h-screen  ">
+    <main className="w-screen  h-screen  ">
       <Hero/> 
       <SectionOne/>
       <SectionTwo/>

@@ -9,7 +9,7 @@ function SectionHeight() {
   useEffect(()=>{Aos.init()},[])
 
   return (
-    <div data-aos-duration="500" data-aos-delay="200" data-aos="zoom-out" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
+    <div id="#contact" data-aos-duration="500" data-aos-delay="200" data-aos="zoom-out" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
       <Title GreenText="Contact" big={true} YellowText="Us" />
       <div className="flex items-center flex-col lg:flex-row">
         <div className="w-full lg:w-[60%] xs2:px-2 px-6 lg:px-12 ">

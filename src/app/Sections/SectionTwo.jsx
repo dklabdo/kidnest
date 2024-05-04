@@ -6,7 +6,7 @@ import Image from "next/image";
 function SectionTwo() {
 
   return (
-    <div  className="md:px-8 flex lg:h-[600px] overflow-x-hidden flex-col-reverse lg:flex-row w-full my-20 items-center justify-between  ">
+    <div id="#home"  className="md:px-8 flex lg:h-[600px] overflow-x-hidden flex-col-reverse lg:flex-row w-full my-20 items-center justify-between  ">
       <div className="w-[50%]   flex justify-center items-center">
         <BabySitting />
       </div>

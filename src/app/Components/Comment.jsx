@@ -14,7 +14,8 @@ function Comment() {
     slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
-    
+    nextArrow : <></>,
+    prevArrow : <></>,
     autoplaySpeed: 1500,
     cssEase: "linear",
     responsive: [
@@ -22,8 +23,8 @@ function Comment() {
           breakpoint: 1300,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 3,
-            infinite: true,
+            slidesToScroll: 1,
+            
             
           }
         },
@@ -32,7 +33,7 @@ function Comment() {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              initialSlide: 2
+              
             }
           },
         
@@ -40,7 +41,7 @@ function Comment() {
    
     
   };
-  return <div className="w-full overflow-x-hidden h-[400px]  px-8">
+  return <div className="overflow-x-hidden w-screen md:px-12 ">
     <Slider {...settings} >
         <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
         <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
@@ -55,7 +56,7 @@ function Comment() {
 
 function CommentCard({profile,name,content}){
     return(
-        <div className="  px-8  xs:px-2   flex flex-col gap-4 py-4  ">
+        <div className=" xs2:px-2 px-8  xs:px-2   flex flex-col gap-4 py-4  ">
             <div className="w-full h-fit px-1 ">
                 <Image src="/icon/quote.svg" width={40} height={40} />
             </div>
