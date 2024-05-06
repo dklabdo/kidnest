@@ -17,8 +17,8 @@ function Register() {
   return (
     <div className="bg w-full h-screen overflow-y-hidden flex justify-center  items-center ">
       <div className="h-screen flex justify-center items-center w-full md:w-[70%] lg:w-[60%] bg-white/50 backdrop-blur-lg ">
-        <div className=" w-full h-fit   md:px-4 py-10    rounded-3xl  ">
-          <h2 className="text-center text-secondary">Inscivez a kidnest</h2>
+        <div className=" w-full     md:px-4 py-10    rounded-3xl  ">
+          <h2 className="text-center my-10 text-xl text-secondary">Inscivez a kidnest</h2>
           <form className="w-full  my-20  px-6">
             <label className="flex mt-4 items-center gap-3 px-2 my-4">
               <UserRound />
