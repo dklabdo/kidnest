@@ -27,6 +27,9 @@
   h3{
     @apply text-base xs:text-sm
   }
+  .in{
+    @apply focus:outline-none focus:border-secondary border-2 focus:border-2  py-3 px-3 bg-white appearance-none w-full rounded-full shadow-md shadow-gray-500/50
+  }
 }
 
 :root {
@@ -56,11 +59,22 @@ body{
   
 }
 
+
 .openAnimation{
   animation-name: open;
   animation-duration: .4s;
   animation-fill-mode: both;
 
+}
+
+
+.bg{
+  background-image: url('../../public/image/bgRegister.svg');
+  height: 100dvh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 

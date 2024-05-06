@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 function Footer() {
   return (
-    <div className='w-full flex flex-col gap-20 '>
+    <div className='w-full flex  flex-col gap-20 '>
         <div className='flex flex-col md:flex-row  items-center'>
         <div className='flex-col justify-center  w-[30%] flex gap-4 items-center'>
             <Image alt='...' src="/image/logo.svg" width={100} height={100} />
