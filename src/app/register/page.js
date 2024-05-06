@@ -13,7 +13,7 @@ import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { UserRound,MailQuestion,PhoneCall,Heart } from "lucide-react";
 function Register() {
   const [openMenu, setOpenMenu] = useState(false);
-
+  const [etatCevil,setetatCevil] = useState('Etat civile')
   return (
     <div className="bg w-full h-screen overflow-y-hidden flex justify-center  items-center ">
       <div className="h-screen flex justify-center items-center w-full md:w-[70%] lg:w-[60%] bg-white/50 backdrop-blur-lg ">
@@ -49,7 +49,7 @@ function Register() {
                   variant="text"
                   className="flex w-full shadow-md shadow-gray-500/50 bg-white rounded-3xl items-center justify-between my-6 text-base font-normal capitalize tracking-normal"
                 >
-                  Etat civil{" "}
+                  {etatCevil}
                   <ChevronDownIcon
                     strokeWidth={2.5}
                     className={`h-3.5 w-3.5 transition-transform ${
@@ -58,11 +58,11 @@ function Register() {
                   />
                 </Button>
               </MenuHandler>
-              <MenuList className="focus:border-none w-[45%] flex flex-col  gap-3 overflow-visible lg:grid">
-                <MenuItem>odfgkfdlgk</MenuItem>
-                <MenuItem>odfgkfdlgk</MenuItem>
-                <MenuItem>odfgkfdlgk</MenuItem>
-                <MenuItem>odfgkfdlgk</MenuItem>
+              <MenuList className="focus:border-none w-[50%] flex flex-col  gap-3 overflow-visible lg:grid">
+                <MenuItem className="text-black" onClick={() => setetatCevil('Merié')}>Merié</MenuItem>
+                <MenuItem className="text-black" onClick={() => setetatCevil('Divorcé')}>Divorcé</MenuItem>
+                <MenuItem className="text-black" onClick={() => setetatCevil('veuf')}>veuf</MenuItem>
+                <MenuItem className="text-black" onClick={() => setetatCevil('veuve')}>veuve</MenuItem>
               </MenuList>
             </Menu>
             <button className="py-3 w-full text-center bg-secondary text-white rounded-3xl my-6">
