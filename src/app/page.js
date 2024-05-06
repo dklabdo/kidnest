@@ -9,22 +9,21 @@ import SectionSex from "./Sections/SectionSex";
 import SectionSeven from "./Sections/SectionSeven";
 import SectionHeight from "./Sections/SectionHeight";
 import Footer from "./Components/Footer";
+import NavBar from "./Components/NavBar";
 export default function Home() {
   return (
     <main className="w-screen  h-screen  ">
-      <Hero/> 
-      <SectionOne/>
-      <SectionTwo/>
-      <SectionThree/>
-      <SectionFour/>
-      <SectionFive/>
-      <SectionSex/>
-      <SectionSeven/>
-      <SectionHeight/>
-      <Footer/>      
-      
-      
-   
+      <NavBar />
+      <Hero />
+      <SectionOne />
+      <SectionTwo />
+      <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSex />
+      <SectionSeven />
+      <SectionHeight />
+      <Footer />
     </main>
   );
 }

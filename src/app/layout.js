@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={HappyMonkey.className}>
-        <NavBar/>
+       
         {children}
       </body>
     </html>

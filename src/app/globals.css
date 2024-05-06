@@ -45,3 +45,22 @@ body{
 }
 
 
+@keyframes open {
+  0% {
+    height: 0;
+  }
+  100%{
+    height: 130px;
+
+  }
+  
+}
+
+.openAnimation{
+  animation-name: open;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+
+}
+
+

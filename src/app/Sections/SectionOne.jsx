@@ -4,7 +4,7 @@ import Get3D from "../Components/Get3D";
 function SectionOne() {
 
   return (
-    <div className="overflow-x-hidden overflow-y-hidden  h-[500px] lg:flex-row w-full  items-center flex-col  flex  ">
+    <div id="home" className="overflow-x-hidden overflow-y-hidden  h-[500px] lg:flex-row w-full  items-center flex-col  flex  ">
       <div className="w-full lg:w-1/2   items-center flex justify-center  h-full">
         <div className="w-fit h-fit">
           <Get3D />
@@ -17,13 +17,13 @@ function SectionOne() {
         </h2>
         <div className="flex w-full  flex-col mx-auto lg:mx-0 md:flex-row gap-10 my-14">
           <div className="flex lg:w-fit w-full  gap-4 items-center py-2 px-6 rounded-full border-2 border-secondary">
-            <Image src="/icon/s1.svg" width={30} height={30} />
+            <Image  alt="..." src="/icon/s1.svg" width={30} height={30} />
             <p className="text-sm  2xl:text-base text-secondary">
               De 1 ans jusqu’a 7 ans
             </p>
           </div>
           <div className=" flex lg:w-fit  w-full gap-4 items-center py-2 px-6 rounded-full border-2 border-primary">
-            <Image src="/icon/s2.svg" width={30} height={30} />
+            <Image alt="..." src="/icon/s2.svg" width={30} height={30} />
             <p className="text-primary text-sm 2xl:text-base">
               grandir avec la nature
             </p>

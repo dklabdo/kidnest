@@ -18,7 +18,7 @@ function Card({icon,title,content} ){
     return(
         <div  className='w-full  xl:w-[400px] bg-white shadow-lg px-4 py-20 rounded-3xl flex flex-col gap-6 shadow-gray-400/80'>
             <div className={`flex justify-center mx-auto items-center w-28 h-28 rounded-full ${icon == 2 ? "bg-secondary/70" : "bg-primary/70"}`}>
-                <Image src={`/icon/c${icon}.svg`}  width={70} height={70} />
+                <Image alt='...' src={`/icon/c${icon}.svg`}  width={70} height={70} />
 
             </div>
             <h3 className={`text-lg text-center ${icon == 2 ? "text-secondary" : "text-primary"}`} >{title} </h3>

@@ -5,7 +5,7 @@ import Contact from "../Components/Contact";
 function SectionHeight() {
 
   return (
-    <div id="#contact" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
+    <div id="contact" className="w-full my-32 flex flex-col xs2:px-4 px-8 md:px-12 lg:px-20 xl:px-32 gap-32">
       <Title GreenText="Contact" big={true} YellowText="Us" />
       <div className="flex items-center flex-col lg:flex-row">
         <div className="w-full lg:w-[60%] xs2:px-2 px-6 lg:px-12 ">
@@ -15,6 +15,8 @@ function SectionHeight() {
           <div className="flex flex-col gap-2 lg:gap-8">
             <div className="flex gap-4 my-2 items-center">
               <Image
+              
+              alt="..."
                 src="/icon/local.svg"
                 className="inline"
                 width={25}
@@ -27,6 +29,7 @@ function SectionHeight() {
             </div>
             <div className="flex gap-6 my-2 items-center">
               <Image
+              alt="..."
                 src="/icon/phone.svg"
                 className="inline"
                 width={25}
@@ -38,6 +41,7 @@ function SectionHeight() {
             </div>
             <div className="flex gap-6 my-2 items-center">
               <Image
+              alt="..."
                 src="/icon/mail.svg"
                 className="inline"
                 width={25}
@@ -49,6 +53,7 @@ function SectionHeight() {
             </div>
             <div className="flex gap-6 my-2 items-center">
               <Image
+              alt="..."
                 src="/icon/insta.svg"
                 className="inline"
                 width={25}
@@ -61,6 +66,7 @@ function SectionHeight() {
           </div>
           <div>
           <Image
+          alt="..."
                 src="/image/map.png"
                 className="rounded-3xl"
                 width={600}

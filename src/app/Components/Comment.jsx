@@ -56,12 +56,12 @@ function Comment() {
 
 function CommentCard({profile,name,content}){
     return(
-        <div className=" xs2:px-2 px-8  xs:px-2   flex flex-col gap-4 py-4  ">
+        <div className=" xs2:px-4 px-8  xs:px-2   flex flex-col gap-4 py-4  ">
             <div className="w-full h-fit px-1 ">
-                <Image src="/icon/quote.svg" width={40} height={40} />
+                <Image alt="..." src="/icon/quote.svg" width={40} height={40} />
             </div>
             <div className=" flex items-center gap-4 ">
-                <Image src={`/profile/p${profile}.png`} width={60} height={60} />
+                <Image alt="..." src={`/profile/p${profile}.png`} width={60} height={60} />
                 <h5 className="text-lg">{name}</h5>
             </div>
             <div className=" ">

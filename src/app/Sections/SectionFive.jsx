@@ -8,6 +8,7 @@ function SectionFive() {
       <div className="flex xs2:w-full xs2:px-4 w-[80%]  flex-col items-center ">
         <Title YellowText="de votre enfants " GreenText="L’entretien" />
         <Image
+        alt="..."
           className="my-32 px-10 xs2:scale-75 "
           src="/image/section2.png"
           width={300}
@@ -16,6 +17,7 @@ function SectionFive() {
         <div className="w-fit  gap-14 h-fit xs2:pl-2 pl-8 flex justify-center flex-col ">
           <div className="flex gap-5 items-center ">
             <Image
+            alt="..."
               className=" "
               src="/image/icon1.svg"
               width={50}
@@ -26,6 +28,7 @@ function SectionFive() {
           </div>
           <div className="flex gap-5 items-center  ">
             <Image
+            alt="..."
               className=""
               src="/image/icon2.svg"
               width={50}
@@ -36,6 +39,7 @@ function SectionFive() {
           </div>
           <div className="flex gap-5 items-center ">
             <Image
+            alt="..."
               className=""
               src="/image/icon3.svg"
               width={50}

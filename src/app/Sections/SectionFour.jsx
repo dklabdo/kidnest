@@ -13,13 +13,13 @@ function SectionFour() {
             </h1>
            </div>
            <div data-aos-duration="1000" data-aos="zoom-in-left" data-aos-delay="300" className='lg:w-1/2  flex justify-center px-2'>
-           <Image className='rounded-[50%] object-cover xs2:w-48 xs2:h-48  md:scale-75 lg:scale-100 w-80 h-80 ' src="/image/n1.jpg" width={500} height={200} />
+           <Image alt='...' className='rounded-[50%] object-cover xs2:w-48 xs2:h-48  md:scale-75 lg:scale-100 w-80 h-80 ' src="/image/n1.jpg" width={500} height={200} />
            </div>
 
         </div>
         <div  className='gap-20 lg:gap-0 flex flex-col-reverse lg:flex-row  justify-center items-center  '>
             <div data-aos-delay="300" data-aos-duration="1000" data-aos="zoom-in-right" className='w-full lg:w-1/2 flex justify-center px-2' >
-            <Image className='rounded-[50%] object-cover xs2:w-48 xs2:h-48  md:scale-90 lg:scale-100  w-80 h-80 ' src="/image/n2.png" width={500} height={100} />
+            <Image alt='...' className='rounded-[50%] object-cover xs2:w-48 xs2:h-48  md:scale-90 lg:scale-100  w-80 h-80 ' src="/image/n2.png" width={500} height={100} />
 
 
             </div>

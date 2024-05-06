@@ -11,7 +11,7 @@ function Hero() {
         <Image src="/image/smile.svg" className="inline w-10" width={80} height={80} />
         </span> <span className="text-secondary">de votre enfant </span> <br /> <span className="text-primary">c’est notre responsabilité</span> </h1>
         <p className="text-center xl:text-start">Une crèche accueillante, offrant un environnement naturel et sécurisé pour votre enfant, favorisant son développement harmonieux.</p>
-        <Link href="/walid" className="px-6  text-start scale-90 mx-auto xl:mx-0 md:scale-95 lg:scale-100 w-fit bg-secondary rounded-full text-base flex gap-2 items-center hover:scale-105 transition text-white my-4 xl:my-14 py-4">
+        <Link href="/register" className="px-6  text-start scale-90 mx-auto xl:mx-0 md:scale-95 lg:scale-100 w-fit bg-secondary rounded-full text-base flex gap-2 items-center hover:scale-105 transition text-white my-4 xl:my-14 py-4">
         inscriver vos enfants
             <Image src="/icon/arrow.svg" className="inline" width={30} height={30} />   
             

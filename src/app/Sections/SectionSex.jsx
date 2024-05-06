@@ -28,6 +28,7 @@ function SectionSex() {
           className="my-20 md:my-0 md:w-[40%]  flex justify-center "
         >
           <Image
+          alt="..."
             className="xs:scale-90 xs2:scale-75"
             src="/image/section3.png"
             width={300}

@@ -12,6 +12,7 @@ function SectionTwo() {
       </div>
       <div data-aos="fade-left" data-aos-duration="500" className="w-full md:w-auto  px-2 lg:px-0 flex justify-end">
         <Image
+        alt="..."
           src="/image/section1.png"
           className="rounded-3xl w-full  lg:rounded-tl-3xl  lg:rounded-bl-3xl "
           width={1000}
@@ -26,7 +27,7 @@ function BabySitting() {
   return (
     <div className="w-52 scale-90  lg:scale-100 flex flex-col my-24 lg:my-0 items-center gap-4 justify-center">
       <div className="w-28 P-3 xs2:scale-90 flex justify-center items-center bg-secondary h-28 rounded-full">
-        <Image src="/icon/BabySitting.png" width={80} height={80} />
+        <Image alt="..." src="/icon/BabySitting.png" width={80} height={80} />
       </div>
       <h3 className="text-lg text-secondary">Baby sitting</h3>
       <p className="text-base text-center">
