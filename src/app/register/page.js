@@ -1,5 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import { getFirestore } from "firebase/firestore";
 import {
   Menu,
   MenuHandler,
@@ -10,6 +11,11 @@ import {
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { UserRound, MailQuestion, PhoneCall, Heart } from "lucide-react";
 import Swal from "sweetalert2";
+import { app } from "../../../firebase";
+import { collection, addDoc } from "firebase/firestore"; 
+
+
+const db = getFirestore(app);
 
 function Register() {
   const [info, setinfo] = useState(null);
@@ -20,7 +26,7 @@ function Register() {
   }
   return (
     <div className="bg w-full h-screen overflow-y-hidden flex justify-center  items-center ">
-      <div className="h-screen flex justify-center items-center w-full md:w-[70%] lg:w-[60%] bg-white/50 backdrop-blur-lg ">
+      <div className="h-screen  flex justify-center items-center w-full md:w-[70%] lg:w-[60%] bg-white/50 backdrop-blur-lg ">
         {next ? (
           <ChildForm parentInfo={info} />
         ) : (
@@ -53,11 +59,11 @@ function ParentForm({ getParentInfo }) {
   }
   const [etatCevil, setetatCevil] = useState("Etat civile");
   return (
-    <div className=" w-full h-fit    md:px-4 py-10    rounded-3xl  ">
+    <div className=" w-full h-screen    md:px-4     rounded-3xl  ">
       <h2 className="text-center my-10 text-xl text-secondary">
         Inscivez a kidnest
       </h2>
-      <form onSubmit={handleSubmit} className="w-full  my-20  px-6">
+      <form onSubmit={(e) => handleSubmit(e)} className="w-full  my-20  px-6">
         <label className="flex mt-4 items-center gap-3 px-2 my-4">
           <UserRound />
           <h3>Full name</h3>
@@ -143,7 +149,6 @@ function ParentForm({ getParentInfo }) {
         </Menu>
         <button
           type="submit"
-          onClick={(e) => e.preventDefault()}
           className="py-3 w-full text-center bg-secondary text-white rounded-3xl my-6"
         >
           Suivent
@@ -165,6 +170,7 @@ function ChildForm({ parentInfo }) {
     sex: "Garcon",
   });
   const [child, setchild] = useState([]);
+  
 
   function handleChange(data) {
     const { name, value } = data;
@@ -174,15 +180,18 @@ function ChildForm({ parentInfo }) {
     });
   }
 
-  function handleAddchild(e) {
-    e.preventDefault();
-
-    childInfo.groupage = groupage;
-    childInfo.sex = sex;
-    child.push(childInfo);
-    setchild(child);
-    console.log(child);
-    reset();
+  function handleAddchild() {
+    if (childInfo.nom != "" && childInfo.age != "") {
+      childInfo.groupage = groupage;
+      childInfo.sex = sex;
+      child.push(childInfo);
+      setchild(child);
+      console.log(child);
+      reset();
+      
+    }
+    
+   
   }
   function reset() {
     setchildInfo({
@@ -194,8 +203,21 @@ function ChildForm({ parentInfo }) {
     setgroupage("A+");
     setsex("Garcon");
   }
-  function handleConfirm(e) {
+  async function postData(data){
+     try {
+          const docRef = await addDoc(collection(db, "register"), data);
+        
+          console.log("Document written with ID: ", docRef.id);
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }
+  }
+
+
+   function handleConfirm(e) {
     e.preventDefault();
+    handleAddchild();
+
     if (child.length > 0) {
       console.log("test");
       Swal.fire({
@@ -211,6 +233,9 @@ function ChildForm({ parentInfo }) {
           childsInfo: child,
         };
         console.log(register);
+        postData(register);
+        
+       
       });
     } else {
       Swal.fire({
@@ -223,12 +248,12 @@ function ChildForm({ parentInfo }) {
     }
   }
   return (
-    <div className=" w-full h-fit    md:px-4 py-10    rounded-3xl  ">
-      <h2 className="text-center my-10 text-xl text-secondary">
+    <div className=" w-full  scale-95 xs:scale-100    md:px-4 py-2    rounded-3xl  ">
+      <h2 className="text-center mt-8 text-xl text-secondary">
         Inscivez a kidnest
       </h2>
-      <form className="w-full  my-20  px-6">
-        <label className="flex mt-4 items-center gap-3 px-2 my-4">
+      <form method="POST" onSubmit={(e) => handleConfirm(e)} className="w-full  my-16  px-6">
+        <label className="flex mt-4 items-center gap-1 px-2 my-4">
           <h3>Nom de votre enfant</h3>
         </label>
         <input
@@ -365,14 +390,14 @@ function ChildForm({ parentInfo }) {
           </div>
         </div>
         <button
-          type="submit"
+        type="reset"
           onClick={(e) => handleAddchild(e)}
           className="py-3 w-full text-center bg-white text-secondary border-2 border-secondary rounded-3xl my-6"
         >
           Ajouter votre enfants
         </button>
         <button
-          onClick={(e) => handleConfirm(e)}
+          type="submit"
           className="py-3 w-full text-center bg-secondary text-white rounded-3xl my-6"
         >
           Confirmer

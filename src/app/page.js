@@ -24,6 +24,7 @@ export default function Home() {
       <SectionSeven />
       <SectionHeight />
       <Footer />
+      
     </main>
   );
 }
