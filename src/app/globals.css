@@ -85,6 +85,13 @@ body{
   animation-delay: 2s;
 
 }
+.scroll{
+  animation-name: scroll;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+
+}
 
 
 
@@ -95,6 +102,15 @@ body{
   }
   100%{
     opacity: 0;
+  }
+}
+
+@keyframes scroll{
+  0%{
+    overflow-y: hidden;
+  }
+  100%{
+    overflow-y: auto;
   }
 }
 
