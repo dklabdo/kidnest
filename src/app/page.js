@@ -13,11 +13,12 @@ import NavBar from "./Components/NavBar";
 import Head from "next/head";
 export default function Home() {
   return (
-    <main className="w-screen relative   h-screen  ">
+    <main className="w-screen relative    h-screen  ">
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-      <NavBar />
+     <div className="">
+     <NavBar />
       <Hero />
       <SectionOne />
       <SectionTwo />
@@ -28,8 +29,10 @@ export default function Home() {
       <SectionSeven />
       <SectionHeight />
       <Footer />
+     </div>
+      
       <div className="h-screen w-full preloadContainer absolute top-0 z-40 bg-bg flex  justify-center">
-        <Image className="animate__animated animate__zoomIn " alt="..." src="/image/logo.svg" width={120} height={120} />
+        <Image className="animate__animated animate__zoomIn z-50" alt="..." src="/image/logo.svg" width={120} height={120} />
       </div>
     </main>
   );
