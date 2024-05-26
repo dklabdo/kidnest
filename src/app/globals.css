@@ -4,7 +4,7 @@
 
 @layer components{
   h1{
-    @apply text-xl md:text-2xl 2xl:text-3xl font-medium
+    @apply text-xl md:text-xl 2xl:text-2xl font-medium
   }
   h2{
     @apply text-xl 2xl:text-2xl
@@ -77,4 +77,24 @@ body{
   background-attachment: fixed;
 }
 
+
+.preloadContainer{
+  animation-name: animateContainer;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+
+}
+
+
+
+
+@keyframes animateContainer{
+  0%{
+    opacity: 100%;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 

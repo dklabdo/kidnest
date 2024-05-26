@@ -6,7 +6,7 @@ function Hero() {
   return (
     <div className=" scale-95 flex xl:flex-row   md:px-8 2xl:px-24 xl:px-14   w-full flex-col-reverse  items-center justify-between  ">
      
-      <div className="animate__animated animate__backInLeft xl:w-[60%] w-full my-10 xl:mt-24 xs:px-1 px-8 flex flex-col gap-8  md:px-14">
+      <div className="animate__animated animate__backInLeft animate__delay-3s xl:w-[60%] w-full my-10 xl:mt-24 xs:px-1 px-8 flex flex-col gap-8  md:px-14">
         <h1 className="xl:text-nowrap text-center xl:text-start"><span className="text-secondary">Le sourir </span><span>
         <Image src="/image/smile.svg" className="inline w-10" width={80} height={80} />
         </span> <span className="text-secondary">de votre enfant </span> <br /> <span className="text-primary">c’est notre responsabilité</span> </h1>
@@ -17,7 +17,7 @@ function Hero() {
             
         </Link>
       </div>
-      <div className="animate__animated animate__backInRight xl:w-[40%]  xl:p-4 flex flex-col items-center p-6 xs:p-0 sm:p-10 justify-center">
+      <div className="animate__animated animate__delay-3s animate__backInRight xl:w-[40%]  xl:p-4 flex flex-col items-center p-6 xs:p-0 sm:p-10 justify-center">
       <Image src="/image/hero.png" className="inline" width={500} height={600} />
       </div>
       </div>
