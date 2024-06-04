@@ -12,7 +12,7 @@ function SectionSex() {
           className="md:w-[50%] gap-8 justify-center md:px-12  flex flex-col"
         >
           <Title
-            GreenText="Desouvrir notre"
+            GreenText="Decouvrir notre"
             YellowText="Application"
             bold={true}
             big={true}

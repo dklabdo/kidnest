@@ -23,8 +23,7 @@ function SectionHeight() {
                 height={30}
               />
               <p className="text-base">
-                Infomation technologies building, Victoria Island, Lagos,
-                Nigeria.
+                sidi djilali sidi bel abbes
               </p>
             </div>
             <div className="flex gap-6 my-2 items-center">
@@ -36,7 +35,7 @@ function SectionHeight() {
                 height={30}
               />
               <p className="text-base">
-              +234 081-1236-4568
+              +213 776 68 97 53
               </p>
             </div>
             <div className="flex gap-6 my-2 items-center">
