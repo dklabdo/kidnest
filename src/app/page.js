@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </Head>
-     <div className="">
+     <div className="overflow-x-hidden">
      <NavBar />
       <Hero />
       <SectionOne />
