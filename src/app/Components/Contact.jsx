@@ -4,11 +4,7 @@ import Image from "next/image";
 import emailjs from '@emailjs/browser';
 
 function Contact() {
-  const [msg, setmsg] = useState({
-    name: "",
-    email: "",
-    msg: "",
-  });
+  
 
   
   const form = useRef();
