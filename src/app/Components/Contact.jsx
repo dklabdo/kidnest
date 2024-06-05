@@ -1,6 +1,8 @@
 "use client";
 import React, { useState , useRef} from "react";
 import Image from "next/image";
+import emailjs from '@emailjs/browser';
+
 function Contact() {
   const [msg, setmsg] = useState({
     name: "",
@@ -13,6 +15,7 @@ function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    console.log('test');
 
     emailjs
       .sendForm('service_u56c339', 'template_8t4qk7a', form.current, {
