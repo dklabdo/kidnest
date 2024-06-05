@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 function Footer() {
   return (
     <div className='w-full flex  flex-col gap-20 '>
@@ -16,7 +17,7 @@ function Footer() {
                 <p className='font-bold mb-2 text-lg' >Navigation</p>
                 <a className='appearance-none '>Home</a>
                 <a className='appearance-none '>Contact</a>
-                <a className='appearance-none '>Services</a>
+                <Link href="/admin" className='appearance-none '>Admin</Link>
             </div>
             <div className='flex flex-col gap-2'>
                 <p className='font-bold mb-2 text-lg' >Legal</p>
