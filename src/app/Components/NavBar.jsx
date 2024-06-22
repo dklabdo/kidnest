@@ -8,7 +8,7 @@ function NavBar() {
   }
   return (
     <div className="w-full flex-col flex gap-4">
-      <nav>
+      <nav >
       <div className="xs:scale-75   flex gap-2 md:px-10 xl:px-20 items-center">
         <Image alt="..." src="/image/logo.svg" width={45} height={50} />
         <h4>
