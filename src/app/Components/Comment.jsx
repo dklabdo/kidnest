@@ -43,11 +43,10 @@ function Comment() {
   };
   return <div className="overflow-x-hidden w-screen md:px-12 ">
     <Slider {...settings} >
-        <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
-        <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
-        <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
-        <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
-        <CommentCard profile={1} name="sayah avdel-ilah" content="Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium." />
+        <CommentCard profile={1} name="Ouadria mouad" content="Mon fils s'épanouit vraiment ici. Les éducateurs sont attentionnés, et il adore jouer à l'extérieur. Les tenues fournies facilitent notre quotidien." />
+        <CommentCard profile={2} name="Elhadj omar" content="Notre fils adore les activités en plein air. Les repas sont variés et sains, et la tenue fournie est un gros plus. Nous sommes très satisfaits." />
+        <CommentCard profile={3} name="Sophie" content="Notre fille adore cette crèche! Les repas sont équilibrés, et les tenues fournies sont très pratiques. Le cadre naturel est un vrai plus, elle rentre toujours heureuse et épanouie." />
+        <CommentCard profile={4} name="Meki Sara" content="Mon enfant est heureux et épanoui à la crèche. Les repas équilibrés, les tenues fournies, et l'environnement naturel sont parfaits. Les éducateurs sont fantastiques." />
         
     </Slider>
   </div>;
@@ -61,7 +60,7 @@ function CommentCard({profile,name,content}){
                 <Image alt="..." src="/icon/quote.svg" width={40} height={40} />
             </div>
             <div className=" flex items-center gap-4 ">
-                <Image alt="..." src={`/profile/p${profile}.png`} width={60} height={60} />
+                <Image className="rounded-[50%] object-cover w-18 h-16" alt="..." src={`/profile/p${profile}.png`} width={60} height={60} />
                 <h5 className="text-lg">{name}</h5>
             </div>
             <div className=" ">

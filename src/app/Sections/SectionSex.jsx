@@ -31,8 +31,8 @@ function SectionSex() {
           alt="..."
             className="xs:scale-90 xs2:scale-75"
             src="/image/section3.png"
-            width={300}
-            height={300}
+            width={360}
+            height={360}
           />
         </div>
       </div>
